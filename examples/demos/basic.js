@@ -14,6 +14,7 @@ let Basic = ({ localizer }) => (
     max={dates.add(dates.endOf(new Date(2015, 17, 1), 'day'), -1, 'hours')}
     defaultDate={new Date(2015, 3, 1)}
     localizer={localizer}
+    PopUp={'aa gya...'}
   />
 )
 

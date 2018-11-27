@@ -25,6 +25,8 @@ export default {
     selected: {},
   },
 
+  // Renders the events on the calendar...
+
   renderEvent(props, event) {
     let {
       selected,
@@ -36,8 +38,7 @@ export default {
       localizer,
       slotMetrics,
       components,
-    } = props
-
+    } = props;
     let continuesPrior = slotMetrics.continuesPrior(event)
     let continuesAfter = slotMetrics.continuesAfter(event)
 
@@ -56,6 +57,8 @@ export default {
       />
     )
   },
+
+  //Render the empty string on the content(empty spaces)
 
   renderSpan(slots, len, key, content = ' ') {
     let per = Math.abs(len) / slots * 100 + '%'

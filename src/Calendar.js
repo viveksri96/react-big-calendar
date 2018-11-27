@@ -669,7 +669,6 @@ class Calendar extends React.Component {
       dateCellWrapper: elementType,
       timeSlotWrapper: elementType,
       timeGutterHeader: elementType,
-
       toolbar: elementType,
 
       agenda: PropTypes.shape({
@@ -867,6 +866,7 @@ class Calendar extends React.Component {
 
     let CalToolbar = components.toolbar || Toolbar
     const label = View.title(current, { localizer, length })
+    console.log(this.props)
 
     return (
       <div
