@@ -76,7 +76,7 @@ class Popup extends React.Component {
     }
 
     return (
-      <div ref="root" style={style} className="rbc-overlay">
+      <div ref="root" style={style} className="rbc-overlay pop-up-modal">
         <div className="rbc-overlay-header">
           {localizer.format(slotStart, 'dayHeaderFormat')}
         </div>

@@ -233,7 +233,6 @@ class MonthView extends React.Component {
   renderOverlay() {
     let overlay = (this.state && this.state.overlay) || {}
     let { accessors, localizer, components, getters, selected } = this.props
-    console.log(this.props)
 
     return (
       <Overlay
